@@ -18,7 +18,7 @@ Heap Connect provides direct SQL access to your retroactive Heap data, automatic
 2. Add a filter for the given paremeter to the lookML Dashboard:
   
 ``` 
-    -name: property_name
+    - name: property_name
     type: field_filter
     explore: sessions
     field: users.property_name
