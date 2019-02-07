@@ -23,7 +23,7 @@ Heap Connect provides direct SQL access to your retroactive Heap data, automatic
     explore: sessions
     field: users.property_name
 ```
-
+3. add in a key value pair under the listener for each dashboard element
 
 ### Add Custom Channel Mappings
 1. in the sessions view edit the dimension referrer mapping with additional case when statements
