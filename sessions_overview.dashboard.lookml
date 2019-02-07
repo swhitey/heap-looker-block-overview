@@ -18,7 +18,7 @@
       height: 400
     - elements: [percent_retention_table]
       height: 250
-
+  
   filters:
 
   - name: date
@@ -36,6 +36,11 @@
     explore: sessions
     field: sessions.referrer_domain_mapped
 
+  - name: users_identity
+    type: field_filter
+    explore: sessions
+    field: users.identity
+
   elements:
 
   - name: total_sessions
@@ -48,6 +53,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     limit: 500
     font_size: medium
 
@@ -61,6 +67,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     limit: 500
     font_size: medium
 
@@ -74,6 +81,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     limit: 500
     font_size: medium
 
@@ -87,6 +95,7 @@
       date: session_facts.session_start_time_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     filters:
       session_facts.session_duration_minutes: <300
     limit: 500
@@ -103,6 +112,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     sorts: [sessions.session_date, session_facts.is_first_session]
     limit: 500
     column_limit: 50
@@ -138,6 +148,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     filters:
       session_facts.session_duration_minutes: <300
     sorts: [sessions.session_date]
@@ -173,6 +184,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     sorts: [sessions.count desc]
     limit: 15
     colors: ['#5245ed', '#ed6168', '#1ea8df', '#353b49', '#49cec1', '#b3a0dd', '#db7f2a',
@@ -202,6 +214,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     sorts: [sessions.count desc]
     limit: 100
     show_view_names: false
@@ -239,6 +252,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     sorts: [sessions.session_date desc, sessions.device_type]
     limit: 500
     column_limit: 50
@@ -272,6 +286,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     sorts: [sessions.count desc]
     limit: 500
     map: world
@@ -290,6 +305,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     sorts: [sessions.count desc]
     limit: 500
     map: usa
@@ -307,6 +323,7 @@
     listen:
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     filters:
       sessions.session_month: 8 months ago for 8 months
       user_facts.first_session_month: 8 months ago for 8 months
@@ -347,6 +364,7 @@
     listen:
         device_type: sessions.device_type
         referrer_domain: sessions.referrer_domain_mapped
+        users_identity: users.identity
     filters:
       sessions.session_month: 8 months ago for 8 months
       user_facts.first_session_month: 8 months ago for 8 months
@@ -392,6 +410,7 @@
       date: sessions.session_date
       device_type: sessions.device_type
       referrer_domain: sessions.referrer_domain_mapped
+      users_identity: users.identity
     sorts: [sessions.session_date]
     limit: 500
     column_limit: 50
