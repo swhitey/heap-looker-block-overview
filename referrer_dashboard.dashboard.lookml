@@ -37,7 +37,7 @@
   - name: total_sessions
     title: Total Sessions
     type: single_value
-    model: heap_block_2
+    model: heap_block
     explore: sessions
     measures: [sessions.count]
     listen:
@@ -52,7 +52,7 @@
   - name: distinct_users
     title: Distinct Users
     type: single_value
-    model: heap_block_2
+    model: heap_block
     explore: sessions
     measures: [sessions.count_users]
     listen:
@@ -67,7 +67,7 @@
   - name: avg_sessions_user
     title: Average Sessions per Distinct User
     type: single_value
-    model: heap_block_2
+    model: heap_block
     explore: sessions
     measures: [sessions.average_sessions_per_user]
     listen:
@@ -82,7 +82,7 @@
   - name: avg_session_dur
     title: Average Session Duration (Minutes)
     type: single_value
-    model: heap_block_2
+    model: heap_block
     explore: sessions
     measures: [session_facts.average_session_duration_minutes]
     listen:
@@ -98,7 +98,7 @@
   - name: daily_session_user_counts
     title: Daily Session and User Counts
     type: looker_line
-    model: heap_block_2
+    model: heap_block
     explore: sessions
     dimensions: [sessions.session_date]
     measures: [sessions.count, sessions.count_users]
