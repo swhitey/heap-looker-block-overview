@@ -30,9 +30,8 @@
     type: field_filter
     explore: sessions
     field: users.identity
-
-### add additional filters here if desired
- elements:
+  
+  elements:
 
   - name: total_sessions
     title: Total Sessions
