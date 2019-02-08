@@ -17,19 +17,16 @@
     type: field_filter
     explore: all_events
     field: all_events.event_name
-    default_value: homepage_click_get_started # modify to desired default first event name value
 
   - name: event_2
     type: field_filter
     explore: all_events
     field: all_events.event_name
-    default_value: signed_up # modify to desired default second event name value
 
   - name: event_3
     type: field_filter
     explore: all_events
     field: all_events.event_name
-    default_value: dashboard_galleries_click_add_files # modify to desired third event name value
 
   - name: date
     type: date_filter
