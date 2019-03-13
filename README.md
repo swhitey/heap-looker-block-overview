@@ -21,7 +21,7 @@ Note: if you aren't querying from the `main_production` schema, you will have to
 
 ### Add User Property Drill Downs
 1. In the users file add additional dimensions to the user view based off the column names of the properties.
-2. Add a filter for the given paremeter to the lookML Dashboard:
+2. Add a filter for the given parameter to the lookML Dashboard:
   
 ``` 
     - name: property_name
