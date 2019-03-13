@@ -1,16 +1,22 @@
-**Heap Looker Block**
+# Heap Looker Blocks
 
-Heap Connect provides direct SQL access to your retroactive Heap data, automatically managed in Redshift. The Heap Looker block provides a starting point for Heap data exploration in Looker, specifically for Heap's Redshift, Bigquery, and Snowflake offering.
+This repo contains the LookML for:
+1. Digital Marketing Analytics by Heap
+2. User Engagement Analytics by Heap
 
+These Heap Looker blocks provide a starting point for Heap data exploration in Looker, specifically for Heap's Redshift, Bigquery, and Snowflake offerings.
+
+This repo is for **Redshift** if you would like to install on **BigQuery** use this repo: https://github.com/llooker/heap_block_bigquery
 
 # Implementation Instructions
-1. Download the looker block from here
+1. Download the Looker Block from here
 2. Drag and drop files into a blank Look ML project
 3. Modify the connection in the heap_block model file to reflect the name of your warehouse connection
 
+Note: if you aren't querying from the `main_production` schema, you will have to update to the correct schema name in the LookML files
+
 
 ## Optional Customization:
-
 
 
 ### Add User Property Drill Downs
