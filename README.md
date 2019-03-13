@@ -6,7 +6,7 @@ This repo contains the LookML for:
 
 These Heap Looker blocks provide a starting point for Heap data exploration in Looker, specifically for Heap's Redshift, Bigquery, and Snowflake offerings.
 
-This repo is for **Redshift** if you would like to install on **BigQuery** use this repo: https://github.com/llooker/heap_block_bigquery
+This repo is for **Redshift** and **Snowflake** if you would like to install on **BigQuery** use this repo: https://github.com/llooker/heap_block_bigquery
 
 # Implementation Instructions
 1. Download the Looker Block from here
